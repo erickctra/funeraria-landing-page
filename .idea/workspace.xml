@@ -10,6 +10,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -29,6 +36,7 @@
     "git-widget-placeholder": "",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/Erick/Documents/Projects/imperatriz-landing",
+    "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -72,7 +80,7 @@
       <workItem from="1701027738403" duration="7375000" />
       <workItem from="1701152394802" duration="68000" />
       <workItem from="1701206776645" duration="2432000" />
-      <workItem from="1701245841388" duration="235000" />
+      <workItem from="1701245841388" duration="695000" />
     </task>
     <servers />
   </component>

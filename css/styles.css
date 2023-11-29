@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+
+:root {
+    --bg: #8C9DE2;
+
+    --heading: white;
+
+    --dark-1: #22202B;
+    --input-primary: #C8FF9C;
+    --input-secondary: #AEBEF6;
+    --input-secondary-text: #313E75;
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.6;
+
+    font-family: Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+    font-size: 14px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
