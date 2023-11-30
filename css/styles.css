@@ -12,7 +12,7 @@
 
     --heading: white;
 
-    --dark-1: #22202B;
+    --dark-1: #141217;
     --input-primary: #C8FF9C;
     --input-secondary: #AEBEF6;
     --input-secondary-text: #313E75;
@@ -43,11 +43,12 @@
 }
 
 body {
+    position: relative;
     min-height: 100vh;
     line-height: 1.6;
 
     background-color: var(--bg);
-    /*background-image: url("../assets/noise-light.webp");*/
+    background-image: url("../assets/noise-light.png");
 
 
     font-family: 'Neue Light',
@@ -74,9 +75,36 @@ h1, h2 {
     font-family: "Neue Black", sans-serif;
 }
 
+html.lenis-scrolling > body .fixed {
+    top: -100px;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: var(--dark-1);
+
+    transition: top 500ms ease-in-out;
+    z-index: 20;
+}
+
+.fixed p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+}
+
 /*header*/
 
 header {
+    margin-top: 38px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -224,12 +252,12 @@ header .group a {
     background: none;
 }
 
-.blur-div.loaded picture > img {
+.blur-div.loaded > img {
     opacity: 1;
 
 }
 
-.blur-div picture > img {
+.blur-div > img {
     opacity: 0;
     display: block;
     transition: opacity 200ms ease-in-out;
