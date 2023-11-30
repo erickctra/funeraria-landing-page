@@ -71,7 +71,7 @@ body {
 }
 
 h1, h2 {
-    font-family: "Neue Black";
+    font-family: "Neue Black", sans-serif;
 }
 
 /*header*/
@@ -149,6 +149,7 @@ header .group a {
     text-align: center;
 
     color: var(--heading);
+
 }
 
 
@@ -236,7 +237,8 @@ header .group a {
 
 /*about*/
 
-.about {
+.about,
+.benefits-1{
     background-color: white;
 
     margin: 0 auto;
@@ -271,6 +273,21 @@ header .group a {
 
     background-color: #dde4f6;
     /*opacity: 0.2;*/
+
+}
+
+.about .featured-image picture {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.about .featured-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    border-radius: 12px;
 }
 
 .about .featured-image .ico {
@@ -289,7 +306,8 @@ header .group a {
     justify-content: space-between;
 }
 
-.about .content sub {
+.about .content sub,
+.benefits-1 .group sub{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -298,7 +316,8 @@ header .group a {
     color: var(--bg);
 }
 
-.about .content h2 {
+.about .content h2
+, .benefits-1 h2{
     font-size: clamp(1.5rem, 8vw - 2rem, 3rem);
     line-height: 110%;
 
@@ -452,12 +471,67 @@ header .group a {
 
 .testimonials .row p {
     font-size: 16px;
-    font-family: "Neue Light";
+    font-family: "Neue Light", sans-serif;
 }
 
 .testimonials .row p:last-child {
     opacity: 0.8;
 }
+
+/*benefits*/
+
+.benefits-1 {
+    margin-top: 90px;
+    justify-content: center !important;
+
+
+}
+
+
+.benefits-1 .group {
+    max-width: 550px;
+    max-height: 500px;
+}
+
+.benefits-1 .image {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(239, 241, 252, 0.49);
+
+    width: 100%;
+    height: 400px;
+
+    max-width: 700px;
+    max-height: 700px;
+
+    border-radius: 12px;
+}
+
+.benefits-1 .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.benefits-1 .group ul {
+    display: flex;
+    flex-direction: column;
+
+    gap: 14px;
+}
+
+.benefits-1 .group ul li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: start;
+
+    list-style: none;
+    font-size: 18px;
+}
+
+
+/*plans*/
 
 .plans {
     margin-top: 90px;
@@ -474,12 +548,12 @@ header .group a {
     align-items: center;
     justify-content: center;
     gap: 8px;
-    font-size: 16px;
+    font-size: 18px;
     color: var(--input-primary);
 }
 
 .plans .group p {
-    font-size: 16px;
+    font-size: 18px;
     text-align: center;
 
     max-width: 400px;
@@ -513,7 +587,7 @@ header .group a {
 
     background: white;
 
-    flex: 1 300px;
+    flex: 1 280px;
     max-width: 350px;
     height: auto;
     min-height:680px;
@@ -542,12 +616,14 @@ header .group a {
 .plans .content h2 {
     font-size: 32px;
     margin: 0;
+    color: var(--dark-1);
+
 }
 
 .plans .content h2 span {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 300;
-    font-family: "Neue Light";
+    font-family: "Neue Light", sans-serif;
 }
 
 .plans .content ul {
@@ -572,30 +648,32 @@ header .group a {
     text-decoration: none;
     padding: 12px 22px;
 
-    font-family: "Neue Medium";
+    font-family: "Neue Medium", sans-serif;
 
     color: white;
     background: var(--dark-1);
     border-radius: 4px;
+    text-align: center;
 
     align-self: flex-end;
     justify-self: flex-end;
 }
 
 .plans .content .item:nth-child(3) {
-    border: 2px solid var(--input-primary);
+    /*border: 2px solid var(--input-primary);*/
 
-    background-color: var(--dark-1);
-    color: white;
+    background-color: var(--input-primary);
+    color: var(--dark-1);
+
 }
 
 .plans .content .item:nth-child(3) sub {
-    color: white;
+    color: var(--dark-1);
 }
 
 .plans .content .item:nth-child(3) a {
-    background-color: var(--input-primary);
-    color: var(--dark-1);
+    background-color: var(--dark-1);
+    color: white;
 }
 
 @media (min-width: 1100px) {
@@ -606,17 +684,19 @@ header .group a {
         justify-content: space-between;
     }
 
-    .about .content sub {
+    .about .content sub,
+    .benefits-1 .group sub{
         justify-content: start;
     }
 
-    .about .content h2 {
+    .about .content h2,
+    .benefits-1 h2{
         text-align: start;
     }
 }
 
 @media (min-width:1600px) {
-    .about {
+    .about, .benefits-1 {
         padding: 140px;
         padding-bottom: 90px;
         gap: 200px;
@@ -626,5 +706,20 @@ header .group a {
 
     .about .content {
         max-height: 500px;
+    }
+}
+
+.fromLeft {
+    animation: fromLeft 600ms;
+}
+
+@keyframes fromLeft {
+   0% {
+       opacity: 0;
+       transform: translateX(-30px);
+   }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
     }
 }
