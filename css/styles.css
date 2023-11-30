@@ -459,6 +459,145 @@ header .group a {
     opacity: 0.8;
 }
 
+.plans {
+    margin-top: 90px;
+    padding: 0 30px;
+}
+
+.plans .group {
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+.plans sub {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 16px;
+    color: var(--input-primary);
+}
+
+.plans .group p {
+    font-size: 16px;
+    text-align: center;
+
+    max-width: 400px;
+    margin: 0 auto;
+
+    color: white;
+}
+
+.plans h2 {
+    font-size: clamp(1.5rem, 8vw - 2rem, 3rem);
+    line-height: 110%;
+
+    font-weight: 600;
+    text-align: center;
+
+    color: white;
+}
+
+.plans .content {
+    margin-top: 36px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+.plans .content .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background: white;
+
+    flex: 1 300px;
+    max-width: 350px;
+    height: auto;
+    min-height:680px;
+
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.plans .content .item .group {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 22px;
+}
+
+
+.plans .content h3 {
+    font-size: 22px;
+}
+
+.plans .content sub {
+    font-size: 16px;
+    color: var(--dark-1);
+}
+
+.plans .content h2 {
+    font-size: 32px;
+    margin: 0;
+}
+
+.plans .content h2 span {
+    font-size: 16px;
+    font-weight: 300;
+    font-family: "Neue Light";
+}
+
+.plans .content ul {
+    display: flex;
+    flex-direction: column;
+
+    gap: 14px;
+}
+
+.plans .content ul li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: start;
+
+    list-style: none;
+    font-size: 16px;
+}
+
+.plans .content a {
+    width: 100%;
+    text-decoration: none;
+    padding: 12px 22px;
+
+    font-family: "Neue Medium";
+
+    color: white;
+    background: var(--dark-1);
+    border-radius: 4px;
+
+    align-self: flex-end;
+    justify-self: flex-end;
+}
+
+.plans .content .item:nth-child(3) {
+    border: 2px solid var(--input-primary);
+
+    background-color: var(--dark-1);
+    color: white;
+}
+
+.plans .content .item:nth-child(3) sub {
+    color: white;
+}
+
+.plans .content .item:nth-child(3) a {
+    background-color: var(--input-primary);
+    color: var(--dark-1);
+}
+
 @media (min-width: 1100px) {
     .about {
         padding: 60px;
