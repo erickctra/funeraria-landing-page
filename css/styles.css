@@ -10,7 +10,7 @@
 :root {
     --bg: #8C9DE2;
 
-    --heading: white;
+    --heading: #F9FAFE;
 
     --dark-1: #141217;
     --input-primary: #C8FF9C;
@@ -21,24 +21,21 @@
 @font-face {
     font-family: 'Neue Light';
     font-style: normal;
-    src: url(https://fonts.cdnfonts.com/s/47998/NeueHaasDisplayLight.woff)
-    format('woff');
+    src: url(https://fonts.cdnfonts.com/s/47998/NeueHaasDisplayLight.woff) format('woff');
     font-display: swap;
 }
 
 @font-face {
     font-family: 'Neue Medium';
     font-style: normal;
-    src: url(https://fonts.cdnfonts.com/s/47998/NeueHaasDisplayMediu.woff)
-    format('woff');
+    src: url(https://fonts.cdnfonts.com/s/47998/NeueHaasDisplayMediu.woff) format('woff');
     font-display: swap;
 }
 
 @font-face {
     font-family: 'Neue Black';
     font-style: normal;
-    src: url(https://fonts.cdnfonts.com/s/47998/NeueHaasDisplayBlack.woff)
-    format('woff');
+    src: url(https://fonts.cdnfonts.com/s/47998/NeueHaasDisplayBlack.woff) format('woff');
     font-display: swap;
 }
 
@@ -83,6 +80,7 @@ html.lenis-scrolling > body .fixed {
     position: fixed;
     top: 0;
     width: 100%;
+    max-width: 100vw;
 
     padding: 8px;
     display: flex;
@@ -96,9 +94,12 @@ html.lenis-scrolling > body .fixed {
 
 .fixed p {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     gap: 8px;
-    color: white;
+    color: #F9FAFE;
+
 }
 
 /*header*/
@@ -137,7 +138,7 @@ header .group a {
 
     font-weight: 600;
     text-decoration: none;
-    color: white;
+    color: #F9FAFE;
 
     padding: 12px 22px;
     border-radius: 40px;
@@ -147,7 +148,7 @@ header .group a {
 
 .headline {
 
-    margin-top: 120px;
+    margin-top: 60px;
     width: 100%;
     max-width: 100vw;
     padding: 0 32px;
@@ -181,7 +182,7 @@ header .group a {
 }
 
 
-.headline .input-group {
+.input-group {
     margin-top: 44px;
 
     display: flex;
@@ -196,7 +197,7 @@ header .group a {
     z-index: 10;
 }
 
-.headline .input-group a.primary {
+.input-group a.primary {
     display: flex;
     align-items: center;
     gap: 12px;
@@ -214,7 +215,7 @@ header .group a {
     height: 100%;
 }
 
-.headline .input-group a.secondary {
+.input-group a.secondary {
     display: flex;
     align-items: center;
     gap: 12px;
@@ -266,11 +267,12 @@ header .group a {
 /*about*/
 
 .about,
-.benefits-1{
-    background-color: white;
+.benefits-1 {
+
+    background-color: #F9FAFE;
 
     margin: 0 auto;
-    width: 97vw;
+    width: 90vw;
     max-width: 1900px;
 
     display: flex;
@@ -291,7 +293,7 @@ header .group a {
     position: relative;
     display: block;
 
-    max-width: 500px;
+    max-width: 450px;
     max-height: 500px;
 
     width: 80vw;
@@ -335,7 +337,7 @@ header .group a {
 }
 
 .about .content sub,
-.benefits-1 .group sub{
+.benefits-1 .group sub {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -344,14 +346,16 @@ header .group a {
     color: var(--bg);
 }
 
-.about .content h2
-, .benefits-1 h2{
+.about .content h2, .benefits-1 h2,
+.enterprises .group h2{
     font-size: clamp(1.5rem, 8vw - 2rem, 3rem);
     line-height: 110%;
 
     font-weight: 600;
     text-align: center;
     margin-bottom: 36px;
+
+    font-family: "Neue Medium";
 }
 
 .about .content .item {
@@ -359,11 +363,11 @@ header .group a {
 }
 
 .about .content .item + .item {
-    margin-top: 20px;
+    margin-top: 2.5rem;
 }
 
 .about .content .under {
-    margin-top: 30px;
+    margin-top: 2.5rem;
 
     display: flex;
     flex-direction: row;
@@ -414,7 +418,7 @@ header .group a {
 
     font-weight: 600;
     text-decoration: none;
-    color: white;
+    color: #F9FAFE;
 
 
     padding: 18px 22px;
@@ -453,7 +457,7 @@ header .group a {
     justify-content: center;
     align-items: center;
 
-    color: white;
+    color: #F9FAFE;
 
     padding: 0 30px;
 }
@@ -470,11 +474,20 @@ header .group a {
 .testimonials .item {
     margin-top: 24px;
 
+
     font-size: 18px;
-    font-weight: 600;
     text-align: center;
-    max-width: 700px;
+    max-width: 500px;
+    font-family: "Neue Medium", sans-serif !important;
+    color: var(--input-secondary-text);
+
+    background-color: var(--input-secondary);
+
+    padding: 30px;
+    border-radius: 12px;
+
 }
+
 
 .testimonials .row {
 
@@ -490,11 +503,20 @@ header .group a {
 }
 
 .testimonials .row .pic {
-    width: 32px;
-    height: 32px;
+    width: 42px;
+    height: 42px;
     border-radius: 32px;
 
     background: var(--input-primary);
+    overflow: hidden;
+    padding: 2px;
+}
+
+.testimonials .row .pic img {
+    width: 100%;
+    height: 100%;
+    border-radius: 32px;
+
 }
 
 .testimonials .row p {
@@ -529,7 +551,7 @@ header .group a {
     width: 100%;
     height: 400px;
 
-    max-width: 700px;
+    max-width: 450px;
     max-height: 700px;
 
     border-radius: 12px;
@@ -562,8 +584,14 @@ header .group a {
 /*plans*/
 
 .plans {
+    margin: 0 auto;
     margin-top: 90px;
     padding: 0 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1900px;
 }
 
 .plans .group {
@@ -587,7 +615,7 @@ header .group a {
     max-width: 400px;
     margin: 0 auto;
 
-    color: white;
+    color: #F9FAFE;
 }
 
 .plans h2 {
@@ -597,7 +625,7 @@ header .group a {
     font-weight: 600;
     text-align: center;
 
-    color: white;
+    color: #F9FAFE;
 }
 
 .plans .content {
@@ -613,12 +641,12 @@ header .group a {
     flex-direction: column;
     justify-content: space-between;
 
-    background: white;
+    background: #F9FAFE;
 
     flex: 1 280px;
-    max-width: 350px;
+    max-width: 450px;
     height: auto;
-    min-height:680px;
+    min-height: 680px;
 
     padding: 30px;
     border-radius: 12px;
@@ -678,7 +706,7 @@ header .group a {
 
     font-family: "Neue Medium", sans-serif;
 
-    color: white;
+    color: #F9FAFE;
     background: var(--dark-1);
     border-radius: 4px;
     text-align: center;
@@ -701,40 +729,104 @@ header .group a {
 
 .plans .content .item:nth-child(3) a {
     background-color: var(--dark-1);
+    color: #F9FAFE;
+}
+
+/*empresas*/
+
+.enterprises {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1900px;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: start;
+    gap: 42px;
+
+
+    border-radius: 12px;
+    padding: 90px 30px;
+
+    color: var(--dark-1);
+}
+
+.enterprises .featured-image {
+    position: relative;
+    margin: 0;
+
+    display: flex;
+    max-width: 700px;
+    width: 80vw;
+    height: auto;
+    border-radius: 12px;
+    background-color: #F9FAFE;
+
+    overflow: hidden;
+    padding-top: 100px;
+}
+
+.enterprises .featured-image .ico {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.enterprises .featured-image img {
+    mix-blend-mode: multiply;
+    width: 80%;
+    margin: 0 auto;
+
+    object-fit: cover;
+
+}
+
+.enterprises .group {
+    max-width: 550px;
+}
+
+.enterprises h2 {
     color: white;
+    text-align: start !important;
 }
 
 @media (min-width: 1100px) {
     .about {
         padding: 60px;
 
-        gap: 60px;
+        gap: 80px;
         justify-content: space-between;
+
+    }
+
+    .about, .benefits-1 {
+        width: 96vw;
     }
 
     .about .content sub,
-    .benefits-1 .group sub{
+    .benefits-1 .group sub {
         justify-content: start;
     }
 
     .about .content h2,
-    .benefits-1 h2{
+    .benefits-1 h2 {
         text-align: start;
     }
 }
 
-@media (min-width:1600px) {
+@media (min-width: 1600px) {
     .about, .benefits-1 {
-        padding: 140px;
-        padding-bottom: 90px;
+        padding: 140px 140px 90px;
         gap: 200px;
         row-gap: 120px;
         justify-content: start;
     }
-
-    .about .content {
-        max-height: 500px;
+    .about .featured-image {
+        max-width: 650px;
+        max-height: 650px;
     }
+
 }
 
 .fromLeft {
@@ -742,10 +834,10 @@ header .group a {
 }
 
 @keyframes fromLeft {
-   0% {
-       opacity: 0;
-       transform: translateX(-30px);
-   }
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
     100% {
         opacity: 1;
         transform: translateX(0);
