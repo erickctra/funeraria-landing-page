@@ -31,7 +31,8 @@ header p {
     text-transform: uppercase;
 
     font-size: clamp(2.75rem, 1.155vw + 2.451rem, 3.375rem);
-    line-height: clamp(4.125rem, 0.485vw + 4rem, 4.388rem);;
+    line-height: clamp(4.125rem, 0.485vw + 4rem, 4.388rem);
+    ;
 }
 
 .home .container {
@@ -53,7 +54,9 @@ header p {
     flex: 1 70%;
 }
 
-.home .input-group a {
+a {
+    max-width: 286px;
+
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -71,7 +74,7 @@ header p {
     color: black;
 }
 
-.home .input-group a:nth-child(2) {
+a + a {
     background-color: transparent;
 
     border: 1px solid rgba(255, 255, 255, 0.40);

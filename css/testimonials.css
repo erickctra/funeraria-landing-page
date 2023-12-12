@@ -1,0 +1,75 @@
+.testimonials {
+    max-width: 100svw;
+    width: 100%;
+
+    padding: 40px;
+    margin: 110px auto;
+}
+
+.testimonials .container {
+    position: relative;
+    background-color: var(--placeholder);
+    border-radius: 12px;
+
+    padding: 120px 40px 40px 40px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 38px;
+}
+
+.ico {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+
+.testimonials .container .title {
+    flex: 1 350px;
+    /* border: 1px solid red; */
+    padding-bottom: 34px;
+}
+
+.testimonials .container h2 {
+    color: var(--bg);
+    max-width: 400px;
+}
+
+.testimonials .container .item {
+    flex: 1 300px;
+    max-width: 300px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+
+    color: var(--bg);
+    line-height: 150%;
+}
+
+.testimonials .container .item p {
+    max-width: 300px;
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+.testimonials .container .item:nth-child(5) {
+    flex: 1 350px;
+    max-width: none;
+}
+
+.testimonials .container .item sub span {
+    display: block;
+    width: 20px;
+    height: 4px;
+
+    background-color: var(--primary-text);
+}
+
+.testimonials .container .input-group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12px;
+}

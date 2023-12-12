@@ -9,6 +9,7 @@
 :root {
     --margin-1: 110px;
 
+    --bg: #FFFCF9;
     --primary-text: #8E9FC9;
 
     --text-dark: #242424;
@@ -20,6 +21,8 @@
 body {
     min-height: 100vh;
     /* line-height: 1.6; */
+
+    background-color: var(--bg);
 
     font-family: Inter,
         -apple-system,
