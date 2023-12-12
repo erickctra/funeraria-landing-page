@@ -9,7 +9,10 @@
 :root {
     --margin-1: 110px;
 
+    --primary-text: #8E9FC9;
+
     --text-dark: #242424;
+    --border: #D4D4D4;
 
     --placeholder: #232121;
 }
