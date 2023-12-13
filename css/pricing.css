@@ -1,0 +1,71 @@
+.pricing {
+    padding: 0 40px;
+
+}
+
+.pricing .container {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+.pricing .item {
+    position: relative;
+    flex: 1 450px;
+    max-width: 100%;
+    background-color: #EBEAEA;
+    padding: 40px;
+
+    height: auto;
+    border-radius: 12px;
+}
+
+.pricing .item:nth-child(3) {
+    background-color: #BECBEB;
+}
+
+.pricing .item h2 {
+    max-width: 490px;
+    font-size: 36px;
+}
+
+.pricing .item p {
+    max-width: 400px;
+    margin-top: 34px;
+    margin-bottom: 60px;
+}
+
+.pricing .item span {
+    font-size: 32px;
+}
+
+.pricing .item ul {
+    margin-top: 26px;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    gap: 36px;
+}
+
+.pricing .item ul li {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.pricing .item ul .col {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.pricing .item a {
+    margin-top: 34px;
+    padding: 8px 16px;
+    line-height: 100%;
+
+    color: var(--bg);
+
+    background-color: var(--placeholder);
+}
