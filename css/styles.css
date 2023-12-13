@@ -67,3 +67,15 @@ h3 {
 sub {
     text-transform: uppercase;
 }
+
+footer {
+    padding: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+footer p {
+    margin: 0 auto;
+    font-size: 14px;
+}

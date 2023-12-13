@@ -51,12 +51,20 @@
 .testimonials .container .item p {
     max-width: 300px;
     font-size: 16px;
-    opacity: 0.8;
 }
 
 .testimonials .container .item:nth-child(5) {
     flex: 1 350px;
     max-width: none;
+}
+
+.testimonials .container .item:nth-child(5) p {
+    max-width: none;
+}
+
+.testimonials .container .item sub {
+    color: #fffcf9cc;
+    font-size: 14px;
 }
 
 .testimonials .container .item sub span {
@@ -68,6 +76,8 @@
 }
 
 .testimonials .container .input-group {
+    margin-top: 60px;
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
