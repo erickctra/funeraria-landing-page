@@ -10,6 +10,16 @@
     flex-wrap: wrap;
     gap: 22px;
 }
+
+.pricing .container .group {
+    margin-bottom: 60px;
+    flex: 1 1000px;
+}
+
+.pricing .container .group span {
+    color: var(--primary-text);
+}
+
 .pricing .item {
     position: relative;
     flex: 1 450px;

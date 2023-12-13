@@ -1,0 +1,98 @@
+.faq {
+    max-width: 100svw;
+    width: 100%;
+
+    padding: 0 40px;
+    margin: 110px auto;
+}
+
+.faq .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.faq .container .group {
+    flex: 1 450px;
+}
+
+
+.faq .container .content {
+    flex: 1 450px;
+}
+
+.faq .container .content ul {
+    list-style: none;
+    margin-top: 24px;
+}
+
+.faq .container .content ul li {
+    max-width: 550px;
+    position: relative;
+}
+
+.faq .container ul ul {
+    margin-top: 0 !important;
+    display: none;
+    position: relative;
+    /* padding: 8px 0 8px 0; */
+    padding-bottom: 14px;
+}
+
+.faq .container ul ul li {
+    font-size: 14px !important;
+    border: none !important;
+}
+
+/* ul li:focus>ul,
+nav ul li:active>ul {
+    display: inherit;
+    border: 1px solid red;
+
+} */
+
+a:focus+ul,
+a:active+ul {
+    display: inherit !important;
+}
+
+a:focus>div .ico,
+a:active>div .ico  {
+    transform: rotate(45deg);
+}
+
+.faq .container h2 {
+    max-width: 500px;
+}
+
+.faq .container ul li {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid var(--border);
+}
+
+.faq .container ul li a {
+    max-width: none;
+    display: inline;
+    flex: 1;
+    height: 60px;
+    padding: 0;
+    background: transparent;
+    border-radius: 0;
+}
+
+.faq .container ul li a div {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-size: 18px;
+}
+
+.faq .container ul li a div .ico {
+    position: relative !important;
+    top: auto;
+    right: auto;
+}
