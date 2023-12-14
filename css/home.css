@@ -4,7 +4,8 @@ header {
     padding: 8px;
     display: flex;
     justify-content: center;
-    gap: 8px;
+    flex-wrap: wrap;
+    gap: 2px;
     align-items: center;
 }
 
@@ -26,12 +27,15 @@ header p {
 }
 
 .home h1 {
-    font-size: 64px;
+    /* font-size: 64px; */
     line-height: 110%;
     text-transform: uppercase;
 
     font-size: clamp(2.75rem, 1.155vw + 2.451rem, 3.375rem);
+    /* font-size: 24px; */
+    padding-top: 24px;
     line-height: clamp(4.125rem, 0.485vw + 4rem, 4.388rem);
+    line-height: 150%;
     ;
 }
 
@@ -39,19 +43,21 @@ header p {
     display: flex;
     gap: 40px;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .home .container .input-group {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 12px;
     flex: 1 200px;
 
 }
 
 .home .group {
-    flex: 1 70%;
+    flex: 1 600px;
 }
 
 a {
@@ -60,9 +66,9 @@ a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 14px;
+    gap: 8px;
 
-    font-size: 14px;
+    font-size: 16px;
 
     border-radius: 80px;
 

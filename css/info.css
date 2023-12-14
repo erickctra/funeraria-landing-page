@@ -45,9 +45,16 @@
     gap: 30px;
 }
 
+.info .grid-collection img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .info .grid-collection .one {
     position: relative;
 
+    overflow: hidden;
     flex: 1 500px;
     max-width: 450px;
     height: 550px;
@@ -68,6 +75,7 @@
     flex-direction: column;
     gap: 30px;
 
+
     flex: 1 500px;
     max-width: 500px;
 
@@ -76,6 +84,8 @@
 
 .info .grid-collection .two .photo {
     position: relative;
+    overflow: hidden;
+
 
     width: 100%;
     height: 350px;

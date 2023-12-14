@@ -6,6 +6,13 @@
     width: 100%;
 }
 
+.services .container h3 {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    font-size: 14px;
+}
+
 .services {
     padding: 0 40px;
 }

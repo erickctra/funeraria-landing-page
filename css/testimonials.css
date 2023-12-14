@@ -39,9 +39,11 @@
 .testimonials .container .item {
     flex: 1 300px;
     max-width: 300px;
+    min-height: 50px;
 
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 28px;
 
     color: var(--bg);
@@ -49,8 +51,10 @@
 }
 
 .testimonials .container .item p {
+    font-family: 'Fixel Light';
     max-width: 300px;
-    font-size: 16px;
+    font-size: 14px;
+    line-height: 180%;
 }
 
 .testimonials .container .item:nth-child(5) {
@@ -59,12 +63,18 @@
 }
 
 .testimonials .container .item:nth-child(5) p {
-    max-width: none;
+    max-width: 350px;
 }
 
 .testimonials .container .item sub {
     color: #fffcf9cc;
     font-size: 14px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    text-transform: none;
 }
 
 .testimonials .container .item sub span {
@@ -78,7 +88,7 @@
 .testimonials .container .input-group {
     margin-top: 60px;
 
-    flex: 1;
+    flex: 1 600px;
     display: flex;
     flex-direction: row;
     justify-content: center;

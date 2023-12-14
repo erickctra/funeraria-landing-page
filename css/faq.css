@@ -18,8 +18,17 @@
     flex: 1 450px;
 }
 
-.faq .container .group h2 {
-    margin-left: 24px;
+
+
+.faq .container .group p {
+    max-width: 350px;
+    margin: 14px 0;
+}
+
+.faq .container .group a {
+    background: none;
+    padding: 0;
+    text-decoration: underline;
 }
 
 .faq .container .content {
@@ -41,6 +50,8 @@
     width: 100%;
     max-width: 550px;
     position: relative;
+
+    transition: all .2s;
 }
 
 .faq .container ul ul {
@@ -54,7 +65,12 @@
 .faq .container ul ul li {
     font-size: 14px !important;
     border: none !important;
+    font-family: 'Fixel Light';
+    opacity: 0.85;
+
+    transition: all .2s;
 }
+
 
 /* ul li:focus>ul,
 nav ul li:active>ul {
@@ -87,25 +103,33 @@ a:active>div .ico  {
     max-width: none;
     display: inline;
     flex: 1;
-    height: 60px;
-    padding: 0;
+    /* height: 60px; */
+
+    padding: 18px 0;
     background: transparent;
     border-radius: 0;
 }
 
 .faq .container ul li a div {
-    height: 60px;
+    /* height: 60px; */
     display: flex;
     align-items: center;
     justify-content: space-between;
+    /* gap: 34px; */
 
     font-size: 18px;
+}
+
+.faq .container ul li a div p {
+    max-width: 280px;
+    font-family: 'Fixel';
 }
 
 .faq .container ul li a div .ico {
     position: relative !important;
     top: auto;
     right: auto;
-
+    width: 16px !important;
+    height: 16px !important;
     transition: transform .2s;
 }
