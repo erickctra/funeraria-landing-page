@@ -1,0 +1,11 @@
+.services .container .photo {
+    position: relative;
+}
+
+.services .container img {
+    width: 100%;
+}
+
+.services {
+    padding: 0 40px;
+}

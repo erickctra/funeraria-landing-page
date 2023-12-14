@@ -3,8 +3,32 @@
     padding: 0;
 
     box-sizing: border-box;
-
 }
+
+@font-face {
+    font-family: 'Fixel Light';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../assets/fonts/FixelDisplay-Light.woff2') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fixel';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../assets/fonts/FixelDisplay-Regular.woff2') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fixel Medium';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../assets/fonts/FixelDisplay-Medium.woff2') format('woff');
+    font-display: swap;
+}
+
 
 :root {
     --margin-1: 110px;
@@ -20,11 +44,11 @@
 
 body {
     min-height: 100vh;
-    /* line-height: 1.6; */
+    line-height: 1.6;
 
     background-color: var(--bg);
 
-    font-family: Inter,
+    font-family: 'Fixel',
         -apple-system,
         BlinkMacSystemFont,
         'Segoe UI',
@@ -61,11 +85,20 @@ h3 {
     line-height: clamp(1.875rem, 0.439vw + 1.761rem, 2.113rem);
 
     font-weight: 400;
+}
 
+h3 span {
+    color: var(--primary-text);
+    text-decoration: underline;
 }
 
 sub {
     text-transform: uppercase;
+}
+
+p {
+    font-family: 'Fixel Light' !important;
+    line-height: 150%;
 }
 
 footer {
@@ -77,5 +110,16 @@ footer {
 
 footer p {
     margin: 0 auto;
-    font-size: 14px;
+    font-size: 12px;
+}
+
+.group sub {
+    background-color: #ebeaeaaf;
+    padding: 6px 16px;
+    border-radius: 16px;
+    font-family: 'Fixel Medium';
+}
+
+.group h2 {
+    margin-top: 26px;
 }
