@@ -14,16 +14,23 @@ header p {
 }
 
 .home {
+    position: relative;
+
     background-color: var(--placeholder);
+    background-image:  url("../assets/home-700.webp") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     height: 90svh;
-    max-height: 1200px;
+    /* max-height: 1200px; */
 
     color: #FFFBF6;
 
 
-    padding: 40px;
+    padding: 20px;
     display: flex;
     align-items: flex-end;
+    border-radius: 0px 0px 32px 32px;
 }
 
 .home h1 {
@@ -31,12 +38,21 @@ header p {
     line-height: 110%;
     text-transform: uppercase;
 
-    font-size: clamp(2.75rem, 1.155vw + 2.451rem, 3.375rem);
-    /* font-size: 24px; */
     padding-top: 24px;
-    line-height: clamp(4.125rem, 0.485vw + 4rem, 4.388rem);
-    line-height: 150%;
-    ;
+
+    font-size: clamp(2.125rem, 1.155vw + 1.826rem, 2.75rem);
+    text-shadow: 0px 7px 15px rgba(40, 39, 46, 0.26), 0px 28px 28px rgba(40, 39, 46, 0.22), 0px 63px 38px rgba(40, 39, 46, 0.13), 0px 112px 45px rgba(40, 39, 46, 0.04), 0px 176px 49px rgba(40, 39, 46, 0.00);
+}
+
+.home sub {
+    background-color: #BECBEB;
+    color: var(--text-dark);
+
+
+}
+
+.home sub .icon {
+padding-top: 2px;
 }
 
 .home .container {
@@ -44,6 +60,15 @@ header p {
     gap: 40px;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.home .container .logo {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .home .container .input-group {
@@ -61,12 +86,14 @@ header p {
 }
 
 a {
-    max-width: 286px;
+    
+    line-height: 80%;
+
 
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+    gap: 12px;
 
     font-size: 16px;
 
@@ -80,7 +107,13 @@ a {
     color: black;
 }
 
-a + a {
+.input-group a {
+    width: 100%;
+    min-height: 60px;
+
+}
+
+a+a {
     background-color: transparent;
 
     border: 1px solid rgba(255, 255, 255, 0.40);

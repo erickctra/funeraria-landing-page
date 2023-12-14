@@ -3,7 +3,8 @@
     width: 100%;
 
     padding: 0 40px;
-    margin: 110px auto;
+    margin-top: var(--margin-1);
+    margin-bottom: 60px;
 }
 
 .faq .container {

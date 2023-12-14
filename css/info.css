@@ -5,12 +5,16 @@
 
 .info {
     margin-top: var(--margin-1);
-    padding: 0 40px;
+    padding: 0 10px;
 }
 
 .info .container {
     display: grid;
     flex-direction: column;
+}
+
+.info .group {
+    padding: 0 30px;
 }
 
 .info .group h2 {
@@ -43,6 +47,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
+    row-gap: 10px
 }
 
 .info .grid-collection img {
@@ -82,6 +87,10 @@
     height: 550px;
 }
 
+.info .grid-collection .two h3 {
+    padding: 0 30px;
+}
+
 .info .grid-collection .two .photo {
     position: relative;
     overflow: hidden;
@@ -107,6 +116,7 @@
     flex-wrap: wrap;
      column-gap: 84px;
      row-gap: 44px;
+    padding: 0 30px;
 }
 
 .info .numbers .item {

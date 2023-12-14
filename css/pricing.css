@@ -30,6 +30,8 @@
 
     height: auto;
     border-radius: 12px;
+    border: 1px solid var(--border);
+
 }
 
 .pricing .item .ico {
@@ -38,6 +40,12 @@
 
 .pricing .item:nth-child(4) {
     background-color: #BECBEB;
+}
+
+.pricing .item:nth-child(5) {
+    background-color: #eeeeee !important;
+
+    border: 1px solid var(--border);
 }
 
 .pricing .item h2 {

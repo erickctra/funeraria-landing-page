@@ -1,3 +1,6 @@
+.services {
+    margin-top: 20px
+}
 .services .container .photo {
     position: relative;
 }
@@ -14,5 +17,5 @@
 }
 
 .services {
-    padding: 0 40px;
+    padding: 0 10px;
 }
