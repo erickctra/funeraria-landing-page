@@ -1,5 +1,5 @@
 .services {
-    margin-top: 20px
+    margin-top: 10px
 }
 .services .container .photo {
     position: relative;
@@ -7,6 +7,11 @@
 
 .services .container img {
     width: 100%;
+    height: 100%;
+    object-fit: none;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+
 }
 
 .services .container h3 {

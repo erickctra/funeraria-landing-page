@@ -53,8 +53,10 @@
 .testimonials .container .item p {
     font-family: 'Fixel Light';
     max-width: 300px;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 180%;
+    color: #FFFCF9;
+    opacity: 0.75;
 }
 
 .testimonials .container .item:nth-child(5) {
