@@ -48,7 +48,7 @@ body {
 
     background-color: var(--bg);
 
-    font-family:'Inter',
+    font-family: 'Inter',
         -apple-system,
         BlinkMacSystemFont,
         'Segoe UI',
@@ -124,27 +124,39 @@ footer p {
 
 @media (min-width: 1000px) {
     body {
-        font-family:'Fixel',
-        'Inter',
-        -apple-system,
-        BlinkMacSystemFont,
-        'Segoe UI',
-        Roboto,
-        Oxygen,
-        Ubuntu,
-        Cantarell,
-        'Fira Sans',
-        'Droid Sans',
-        'Helvetica Neue',
-        sans-serif;
+        font-family: 'Fixel',
+            'Inter',
+            -apple-system,
+            BlinkMacSystemFont,
+            'Segoe UI',
+            Roboto,
+            Oxygen,
+            Ubuntu,
+            Cantarell,
+            'Fira Sans',
+            'Droid Sans',
+            'Helvetica Neue',
+            sans-serif;
     }
 
     p {
-        font-family: 'Fixel Light' ;
+        font-family: 'Fixel Light';
     }
 
     .group sub {
 
         font-family: 'Fixel Medium';
     }
-  }
+
+    .home {
+        padding: 40px !important;
+    }
+
+    .home h1 {
+        font-size: clamp(2.125rem, 1.155vw + 1.826rem, 2.75rem) !important;
+        line-height: clamp(3.188rem, 0.716vw + 3.002rem, 3.575rem) !important;
+    }
+    a {
+        max-width: 286px;
+    }
+}
