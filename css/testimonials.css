@@ -9,7 +9,7 @@
 .testimonials .container {
     position: relative;
     background-color: var(--placeholder);
-    border-radius: 12px;
+    border-radius: 24px;
 
     padding: 120px 40px 40px 40px;
 
@@ -19,14 +19,14 @@
     gap: 38px;
 }
 
-.ico {
+.testimonials .ico {
     position: absolute;
-    top: 40px;
-    right: 40px;
+    bottom: 40px;
+    left: 40px;
 }
 
 .testimonials .container .title {
-    flex: 1 350px;
+    flex: 1 320px;
     /* border: 1px solid red; */
     padding-bottom: 34px;
 }
@@ -51,7 +51,7 @@
 }
 
 .testimonials .container .item p {
-    font-family: 'Fixel Light';
+    /* font-family: 'Fixel Light'; */
     max-width: 300px;
     font-size: 16px;
     line-height: 180%;

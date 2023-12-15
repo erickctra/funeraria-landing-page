@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-@font-face {
+/* @font-face {
     font-family: 'Fixel Light';
     font-style: normal;
     font-weight: 300;
@@ -27,7 +27,7 @@
     font-weight: 500;
     src: url('../assets/fonts/FixelDisplay-Medium.woff2') format('woff');
     font-display: swap;
-}
+} */
 
 
 :root {
@@ -47,8 +47,7 @@ body {
     line-height: 1.6;
 
     background-color: var(--bg);
-
-    font-family: 'Fixel',
+    font-family: 'DM Sans',
         -apple-system,
         BlinkMacSystemFont,
         'Segoe UI',
@@ -70,6 +69,113 @@ body {
     margin: 0 auto;
     max-width: 100%;
     width: 1280px;
+
+    overflow: hidden;
+    border-radius: 24px;
+}
+
+a {
+
+
+    line-height: 80%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    font-size: 16px;
+
+    border-radius: 80px;
+
+    padding: 14px 22px;
+    background-color: #C8FF9C;
+
+    text-decoration: none;
+
+    color: black;
+}
+
+.input-group a {
+    --button-color: #BECBEB;
+    --color: var(--text-dark);
+
+    position: relative;
+    /* width: 100%; */
+    min-height: 50px;
+    overflow: hidden;
+}
+
+.input-group a::after {
+    position: absolute;
+    content: 'Whatsapp Imperatriz';
+
+
+    opacity: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    border-radius: 22px;
+}
+
+.input-group a+a::after {
+    content: 'Ligar para Imperatriz';
+}
+
+.input-group a:hover::after,
+.input-group a:hover::after {
+    transform: translateX(0);
+
+    animation: sheen 600ms forwards;
+}
+
+a+a {
+    --button-color: #FFFBF6 !important;
+    --color: var(--text-dark);
+
+    background-color: transparent;
+
+    border: 1px solid rgba(255, 255, 255, 0.40);
+    color: #FFFBF6;
+    background: rgba(200, 255, 156, 0.00);
+}
+
+@keyframes sheen {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+        color: transparent;
+
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateX(0%);
+        background: var(--button-color);
+        color: transparent;
+        height: 100%;
+        box-sizing: border-box;
+    }
+
+    60% {
+        height: 300%;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+        background: var(--button-color);
+        color: var(--color);
+
+        height: 100%;
+    }
 }
 
 h2 {
@@ -113,50 +219,87 @@ footer p {
 }
 
 .group sub {
-    background-color: #ebeaeaaf;
+    background-color: #F6F2EF;
     padding: 6px 16px;
     border-radius: 16px;
+    font-size: 12px;
+
 }
 
 .group h2 {
     margin-top: 26px;
 }
 
+img {
+    transition: .4s all ease-in-out;
+    border-radius: 24px;
+
+}
+
+picture {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+h2,
+h3,
+span,
+p,
+sub,
+li {
+    color: #37322f;
+}
+
+.ico {
+    z-index: 10;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+
+svg {
+    fill: transparent;
+    transition: fill .4s ease;
+}
+
+.one:hover svg {
+    fill: #232121;
+}
+
+.two:hover svg {
+    fill: var(--bg);
+}
+
 @media (min-width: 1000px) {
-    body {
-        font-family: 'Fixel',
-            'Inter',
-            -apple-system,
-            BlinkMacSystemFont,
-            'Segoe UI',
-            Roboto,
-            Oxygen,
-            Ubuntu,
-            Cantarell,
-            'Fira Sans',
-            'Droid Sans',
-            'Helvetica Neue',
-            sans-serif;
-    }
-
-    p {
-        font-family: 'Fixel Light';
-    }
-
-    .group sub {
-
-        font-family: 'Fixel Medium';
-    }
 
     .home {
-        padding: 40px !important;
+        padding: 40px 60px !important;
     }
 
     .home h1 {
-        font-size: clamp(2.125rem, 1.155vw + 1.826rem, 2.75rem) !important;
-        line-height: clamp(3.188rem, 0.716vw + 3.002rem, 3.575rem) !important;
+        /* font-size: 74px !important; */
+        font-size: 44px !important;
+        max-width: 1000px;
+        margin: 0 auto;
     }
+
     a {
         max-width: 286px;
+        font-size: 14px;
+    }
+
+    .info .grid-collection .one {
+
+        max-width: 450px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .home h1 {
+        font-size: clamp(4rem, 3.125vw + 1.5rem, 5.25rem) !important;
+        line-height: clamp(6rem, 2.063vw + 4.35rem, 6.825rem);
     }
 }
