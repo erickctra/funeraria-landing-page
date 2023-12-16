@@ -75,9 +75,7 @@ body {
 }
 
 a {
-
-
-    line-height: 80%;
+    line-height: 110%;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -95,7 +93,8 @@ a {
     color: black;
 }
 
-.input-group a {
+.input-group a,
+.pricing .container + a {
     --button-color: #BECBEB;
     --color: var(--text-dark);
 
@@ -105,7 +104,8 @@ a {
     overflow: hidden;
 }
 
-.input-group a::after {
+.input-group a::after,
+.pricing .container + a::after {
     position: absolute;
     content: 'Whatsapp Imperatriz';
 
@@ -130,7 +130,7 @@ a {
 }
 
 .input-group a:hover::after,
-.input-group a:hover::after {
+.pricing .container + a:hover::after {
     transform: translateX(0);
 
     animation: sheen 600ms forwards;

@@ -1,6 +1,7 @@
 .pricing {
     padding: 0 10px;
-
+    display: flex;
+    flex-direction: column;
 }
 
 .pricing .container {
@@ -9,6 +10,11 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 10px;
+}
+
+.pricing .container+a {
+    margin: 40px auto;
+    max-width: none;
 }
 
 .pricing .container .group {
@@ -32,6 +38,25 @@
     border-radius: 24px;
     border: 1px solid var(--border);
 
+}
+
+.pricing .item a{
+    transition: gap .2s ease-in-out;
+
+}
+
+.pricing .arrow-line {
+    opacity: 0;
+    transition: opacity .2s ease-in-out;
+}
+
+
+.pricing .item a:hover .arrow-line {
+    opacity: 1;
+}
+
+.pricing .item a:hover {
+    gap: 16px;
 }
 
 .pricing .item .ico {
