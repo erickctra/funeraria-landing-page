@@ -263,6 +263,12 @@ svg {
     fill: var(--bg);
 }
 
+@media (min-width: 600px) {
+    footer .container .links .group {
+        flex: none !important;
+    }
+}
+
 @media (min-width: 1000px) {
 
     .home {
@@ -285,6 +291,8 @@ svg {
 
         max-width: 450px;
     }
+
+
 }
 
 @media (min-width: 1280px) {
