@@ -206,17 +206,7 @@ p {
     line-height: 150%;
 }
 
-footer {
-    padding: 40px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
 
-footer p {
-    margin: 0 auto;
-    font-size: 12px;
-}
 
 .group sub {
     background-color: #F6F2EF;
