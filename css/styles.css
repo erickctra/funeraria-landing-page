@@ -263,6 +263,42 @@ svg {
     fill: var(--bg);
 }
 
+.fixed {
+    visibility: hidden;
+    position: fixed;
+    bottom: -200px;
+    right: 20px;
+
+    z-index: -10;
+
+    transition: all 400ms ease-in-out;
+}
+
+.fixed.fromBottom {
+    bottom: 20px;
+
+    visibility: visible;
+    z-index: 20;
+}
+
+.fixed .input-group {
+    display: flex;
+    gap: 8px;
+}
+
+.fixed .input-group a:first-child::after {
+    animation: none;
+}
+
+.fixed .input-group a+a {
+    --button-color: #BECBEB !important;
+    --color: var(--placeholder) !important ;
+
+    border: none;
+    color: var(--bg);
+    background-color: var(--placeholder);
+}
+
 @media (min-width: 600px) {
     footer .container .links .group {
         flex: none !important;

@@ -84,6 +84,11 @@ footer .container hr {
     opacity: 0.2;
 }
 
+footer small {
+    margin-bottom: 60px;
+    opacity: 0.75;
+}
+
 
 footer .container .made-by {
     padding-bottom: 22px;
