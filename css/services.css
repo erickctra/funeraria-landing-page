@@ -28,3 +28,42 @@
 .services {
     padding: 0 10px;
 }
+
+
+.services-list {
+    padding: 10px;
+    padding-bottom: 110px;
+}
+
+.services-list .container {
+    border-radius: 0;
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+.services-list .container .item {
+    flex: 1 300px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+
+    border-radius: 22px;
+    padding: 40px;
+
+    border: 1px solid var(--border);
+}
+
+.services-list .container .item .group {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+
+.services-list .container .item p {
+    opacity: 0.85;
+}

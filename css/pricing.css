@@ -44,7 +44,7 @@
     align-items: center;
     gap: 6px;
 
-    font-weight: 600;
+    /* font-weight: 600; */
 }
 
 .pricing .container .group span {
