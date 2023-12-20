@@ -33,7 +33,6 @@ footer .container .links {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 32px;
-    justify-content: flex-end;
 }
 
 
@@ -45,6 +44,7 @@ footer .container .links a {
     background-color: transparent;
     padding: 0;
     color: var(--text-dark) !important;
+    line-height: 150%;
 
     text-decoration: underline;
     text-underline-offset: 4px;

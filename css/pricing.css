@@ -23,6 +23,30 @@
     padding: 0 30px 0 30px;
 }
 
+.pricing .container .group p {
+    margin-top: 12px;
+    max-width: 300px;
+}
+
+.pricing .container .group ul {
+    margin-top: 60px;
+    /* justify-content: flex-end; */
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+.pricing .container .group ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+
+    font-weight: 600;
+}
+
 .pricing .container .group span {
     color: var(--primary-text);
 }
@@ -65,6 +89,10 @@
 
 .pricing .item:nth-child(4) {
     background-color: #BECBEB;
+}
+
+.pricing .item:nth-child(4) a {
+    color: #C8FF9C;
 }
 
 .pricing .item:nth-child(5) {

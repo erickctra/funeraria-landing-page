@@ -267,6 +267,11 @@ svg {
     footer .container .links .group {
         flex: none !important;
     }
+
+    .pricing .container .group ul {
+        justify-content: flex-end;
+
+    }
 }
 
 @media (min-width: 1000px) {
